@@ -10,8 +10,8 @@ tasks:
       sdk i kotlin
       sdkmanager --update
       yes | sdkmanager --licenses
-#      flutter pub get
-#      flutter run -d web-server --no-resident
+      flutter pub get
+      flutter run -d web-server --no-resident
     command: >
       echo "Ready!"
 ports:
