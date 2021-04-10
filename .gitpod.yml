@@ -10,8 +10,9 @@ tasks:
       sdk i kotlin
       sdkmanager --update
       yes | sdkmanager --licenses
+      cd app_client
       flutter pub get
-      flutter run -d web-server --no-resident
+      flutter run -d web-server --release --web-port=8080 --web-hostname=0.0.0.0
     command: >
       echo "Ready!"
 ports:
