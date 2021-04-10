@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
+import 'package:rx_notifier/rx_notifier.dart';
 
 class Controller {
-  var counter = ValueNotifier<int>(0);
+  var counter = RxNotifier<int>(0);
 
   void incrementCounter() {
     counter.value++;
